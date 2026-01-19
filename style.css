@@ -118,3 +118,162 @@ nav h1 {
   transition: 0.5s;
 }
 }
+
+/* ---------------- HERO SECTION ---------------- */
+
+
+.hero {
+  width: 1600px;
+  max-width: 100%;
+  height: 760px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.hero-section {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("./assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; 
+  padding-top: 60px;          
+}
+
+
+.hero-circle-wrapper {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  margin: 0 auto;
+}
+
+.hero-circle-wrapper .circle {
+  width: 100%;
+  height: auto;
+}
+
+.microphone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+}
+
+.p-text {
+  position: absolute;
+  top: 4px;
+  right: 7px;
+  background-color: #30B868; 
+  color: white;
+  padding: 8px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: min(4vw, 14px);
+}
+
+.hero-text {
+    margin-top: 40px;
+}
+
+.hero-text h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.hero-section p{
+    color: white;
+}
+
+.two-button{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+.btn1{
+  padding: 12px 20px;
+  background-image: linear-gradient(to bottom left, rgb(222, 241, 110),rgb(224, 79, 133), rgb(172, 53, 246));
+  background-size: 200% auto;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn1:hover {
+  background-position: right center;
+}
+
+.btn2 {
+  border: 2px solid #30B868;   
+  background: none;
+  font-weight: 700;
+  font-size: 16px;
+  color: #30B868;
+  padding: 12px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn2:hover {
+  background: #30B868;  
+  color: white;
+  border-color: #30B868;
+}
+
+@media (max-width: 576px) {
+.hero-section{
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 420px;
+  background-image: url("./assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero{
+    height: 100%;
+}
+
+  .hero-circle-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.microphone {
+  width: min(35vw, 70px);
+}
+
+.p-text {
+  font-size: 12px;
+  padding: 6px 16px;
+}
+.hero-text {
+    margin-top: 5px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+}
+
+.btn1, .btn2 {
+  width: auto;
+  padding: 10px 14px;
+  font-size: 14px;
+}
+}
+
