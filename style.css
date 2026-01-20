@@ -209,7 +209,26 @@ nav h1 {
   border: none;
   cursor: pointer;
   transition: 0.5s;
+  overflow: hidden;
 }
+
+.btn1 span {
+  display: inline-block;
+  animation: floatText 2s ease-in-out infinite;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .btn1:hover {
   background-position: right center;
 }
@@ -334,5 +353,81 @@ hr{
 .count h2{
     font-size: 40px;
     color: #00FF88;
+}
+}
+
+.techvave{
+  padding: 120px 200px;
+  background-color: #230E3D;
+}
+
+.techvave h1{
+  text-align: center;
+  color: white;
+  font-size: 48px;
+}
+
+.tech{
+  display: grid;
+  gap: 30px;
+  padding-top: 40px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-level{
+  color: white;
+  padding: 40px;
+  background-color: #2b0b55;
+  border-radius: 40px;
+}
+
+.grid-level h4{
+  margin-top: 16px;
+  padding-bottom: 16px;
+
+}
+
+.headphone{
+  grid-column: span 1;
+  grid-row: span 2;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.device{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.location{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.bolt{
+  grid-column: span 2;
+  grid-row: span 1;
+
+}
+
+@media (max-width: 576px) {
+
+  .techvave{
+  padding: 40px 20px;
+  background-color: #230E3D;
+}
+  .tech{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 40px;
+
+}
+.techvave h1{
+
+  font-size: 32px;
 }
 }
