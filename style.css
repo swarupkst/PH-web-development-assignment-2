@@ -507,7 +507,7 @@ hr {
 
 .harry {
   background-color: #250D44;
-  width: 380px;
+  width: 378px;
   height: auto;
   border-radius: 20px;
   overflow: hidden;
@@ -649,11 +649,9 @@ footer {
   .foot {
     width: 100%;
     min-height: 280px;
-    /* ensures space for footer */
     text-align: center;
     background-image: url("./assets/footer-bg.png");
     background-size: 150% 100%;
-    /* stretch image to fit exactly */
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 60px;
@@ -673,7 +671,7 @@ footer {
     color: white;
     padding-top: 24px;
     flex-wrap: wrap;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
