@@ -25,7 +25,7 @@ nav h1 {
 }
 
 .wave {
-  background: linear-gradient(to bottom, #9d0b4a, #d45d93);
+  background: linear-gradient(to bottom left, #6b018b, rgb(184, 70, 70), #ce7502);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -442,7 +442,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    padding-top: 40px;
+    padding-top: 16px;
 
   }
 
@@ -521,10 +521,13 @@ hr {
   .i-video {
     display: flex;
     gap: 16px;
-    padding-top: 40px;
+    padding-top: 24px;
     color: white;
     align-items: center;
     justify-content: center;
+  }
+  .video h1 {
+    font-size: 39px;
   }
 
 }
@@ -597,6 +600,7 @@ hr {
     align-items: center;
     text-align: center;
     margin: auto 0;
+    padding-top: 60px;
   }
 }
 
