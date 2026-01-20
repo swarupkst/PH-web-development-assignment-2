@@ -168,14 +168,14 @@ nav ul a {
 
 .p-text {
   position: absolute;
-  top: 4px;
-  right: 7px;
+  top: 20px;
+  right: 50px;
   background-color: #30B868;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 8px 20px;
   border-radius: 12px;
   font-weight: 600;
-  font-size: min(4vw, 14px);
+  font-size:14px;
 }
 
 .hero-text {
@@ -285,7 +285,15 @@ nav ul a {
   .p-text {
     font-size: 12px;
     padding: 6px 16px;
-  }
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  color: rgb(0, 0, 0);
+  border-radius: 12px;
+  font-weight: 600;
+
+}
+  
 
   .hero-text {
     margin-top: 5px;
@@ -589,5 +597,79 @@ hr {
     align-items: center;
     text-align: center;
     margin: auto 0;
+  }
+}
+
+.foot {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("./assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 60px;
+}
+
+footer {
+  width: 1600px;
+  max-width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 32px;
+}
+
+
+.copyright {
+  color: white;
+  padding-top: 32px;
+}
+
+.foot h1 {
+  color: white;
+  font-size: 60px;
+}
+
+@media (max-width: 576px) {
+  .foot {
+    width: 100%;
+    min-height: 280px;
+    /* ensures space for footer */
+    text-align: center;
+    background-image: url("./assets/footer-bg.png");
+    background-size: 150% 100%;
+    /* stretch image to fit exactly */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+  }
+
+  .footer {
+
+    height: 250px;
+
+  }
+
+  .footer-icon {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 24px;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
